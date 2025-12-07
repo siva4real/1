@@ -1,291 +1,101 @@
 <!doctype html>
-<html lang="en">
+<html>
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Q4 2025 Earnings Report - Financial Institution</title>
+		<title>Quarterly Earnings Report</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.min.css" id="theme">
 
 		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/monokai.min.css">
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-
-				<!-- Title Slide -->
-				<section data-background-color="#2c3e50">
-					<h1>Q4 2025 Earnings Report</h1>
-					<h3>Major Financial Institution</h3>
-					<p>Technical Consultant: <a href="mailto:24f3004072@ds.study.iitm.ac.in">24f3004072@ds.study.iitm.ac.in</a></p>
-					<p>December 7, 2025</p>
-					<aside class="notes">
-						Welcome everyone. Today we'll be reviewing the strong performance from Q4 2025 and outlining our strategy for the upcoming year.
-					</aside>
-				</section>
-
-				<!-- Executive Summary -->
 				<section>
-					<h2>Executive Summary</h2>
-					<ul>
-						<li class="fragment">Record quarterly revenue of $12.5B</li>
-						<li class="fragment">Net income increased by 18% YoY</li>
-						<li class="fragment">Digital transformation initiatives showing strong results</li>
-						<li class="fragment">Market share expanded in key segments</li>
-					</ul>
+					<h1>Quarterly Earnings Report</h1>
+					<p>Q3 2025</p>
+					<p>Contact: <a href="mailto:24f3004072@ds.study.iitm.ac.in">24f3004072@ds.study.iitm.ac.in</a></p>
 					<aside class="notes">
-						Let's start with the key takeaways. We've had a record-breaking quarter. I'll walk you through the details of each of these points.
+						Welcome everyone to our quarterly earnings report for the third quarter of 2025.
 					</aside>
 				</section>
 
-				<!-- Financial Highlights -->
-				<section data-background-color="#34495e">
-					<h2>Financial Highlights</h2>
-					<div class="r-stack">
-						<div class="fragment">
-							<h3>Q4 2025 Results</h3>
-							<table>
-								<tr>
-									<th>Metric</th>
-									<th>Q4 2025</th>
-									<th>Q4 2024</th>
-									<th>YoY Growth</th>
-								</tr>
-								<tr>
-									<td>Total Revenue</td>
-									<td>$12.5B</td>
-									<td>$11.2B</td>
-									<td>+11.6%</td>
-								</tr>
-								<tr>
-									<td>Net Income</td>
-									<td>$2.8B</td>
-									<td>$2.4B</td>
-									<td>+16.7%</td>
-								</tr>
-								<tr>
-									<td>EPS</td>
-									<td>$4.25</td>
-									<td>$3.78</td>
-									<td>+12.4%</td>
-								</tr>
-							</table>
-						</div>
-					</div>
-					<aside class="notes">
-						Here are the headline numbers. As you can see, we have consistent double-digit growth across all key metrics compared to last year.
-					</aside>
-				</section>
-
-				<!-- Markdown Slide -->
 				<section data-markdown>
 					<textarea data-template>
-						## Revenue Breakdown
-
-						- **Retail Banking**: 45% of total revenue
-							- Mortgage lending up 12%
-							- Personal loans increased 8%
-						- **Corporate Banking**: 35%
-							- Commercial loans grew 15%
-							- Investment banking fees rose 22%
-						- **Investment Management**: 20%
-							- Assets under management reached $2.1T
-							- Performance fees up 28%
-
-						**Key Driver**: Digital adoption across all segments
+						## Agenda
+						- Financial Highlights
+						- Key Metrics
+						- Product Updates
+						- Q&A
 					</textarea>
 					<aside class="notes">
-						This slide, written in Markdown, shows our revenue diversification. Digital adoption has been a significant catalyst for growth in all areas.
+						Here is the agenda for today's presentation. We will start with financial highlights, then move to key metrics and product updates, and finally open the floor for questions.
 					</aside>
 				</section>
 
-				<!-- Technical Analysis with Code -->
 				<section>
-					<h2>Financial Modeling</h2>
-					<h3>Python Analysis of Revenue Trends</h3>
-					<pre><code data-trim data-noescape class="python">
-import pandas as pd
-import matplotlib.pyplot as plt
-import numpy as np
+					<h2>Financial Highlights</h2>
+					<ul>
+						<li class="fragment">Revenue: $150M (up 15% YoY)</li>
+						<li class="fragment">Net Profit: $30M (up 20% YoY)</li>
+						<li class="fragment">EPS: $1.25 (up 18% YoY)</li>
+					</ul>
+					<aside class="notes">
+						This slide shows our strong financial performance this quarter. We've seen significant growth across the board.
+					</aside>
+				</section>
 
-# Load quarterly financial data
-data = pd.DataFrame({
-    'quarter': ['Q1', 'Q2', 'Q3', 'Q4'],
-    'revenue': [10.2, 11.5, 11.8, 12.5],
-    'expenses': [8.1, 9.2, 9.4, 9.7]
-})
+				<section>
+					<h2>Code Sample: Revenue Projection</h2>
+					<pre><code data-line-numbers="1-5|3" class="python">
+def calculate_projection(current_revenue, growth_rate):
+  """Calculates next quarter's revenue projection."""
+  return current_revenue * (1 + growth_rate)
 
-# Calculate profit margin
-data['profit_margin'] = (data['revenue'] - data['expenses']) / data['revenue'] * 100
-
-# Display results
-print(data)
-print(f"Average profit margin: {data['profit_margin'].mean():.1f}%")
-
-# Create visualization
-plt.figure(figsize=(10, 6))
-plt.plot(data['quarter'], data['revenue'], marker='o', label='Revenue')
-plt.plot(data['quarter'], data['expenses'], marker='s', label='Expenses')
-plt.title('Q4 2025 Financial Performance')
-plt.xlabel('Quarter')
-plt.ylabel('Amount ($B)')
-plt.legend()
-plt.grid(True)
-plt.show()
+projected_revenue = calculate_projection(150, 0.05)
+print(f"Projected Revenue: ${projected_revenue}M")
 					</code></pre>
 					<aside class="notes">
-						For our more technical stakeholders, here's a Python script we used for trend analysis. This helps us visualize performance and make data-driven decisions.
+						Here's a small Python snippet demonstrating how we calculate our revenue projections. We are expecting a 5% growth in the next quarter.
 					</aside>
 				</section>
 
-				<!-- Mathematical Equations -->
-				<section data-background-color="#27ae60">
-					<h2>Financial Formulas</h2>
-					<div class="r-stack">
-						<div class="fragment">
-							<h3>Return on Equity (ROE)</h3>
-							<p class="math">$$ROE = \frac{Net\ Income}{Shareholder's\ Equity}$$</p>
-							<p>Our ROE for Q4: <span class="math">$$\frac{2.8B}{45.2B} = 6.2\%$$</span></p>
-						</div>
-						<div class="fragment">
-							<h3>Earnings Per Share (EPS)</h3>
-							<p class="math">$$EPS = \frac{Net\ Income\ -\ Preferred\ Dividends}{Weighted\ Average\ Shares\ Outstanding}$$</p>
-							<p>Q4 EPS: <span class="math">$$\frac{2.8B}{658M} = \$4.25$$</span></p>
-						</div>
-						<div class="fragment">
-							<h3>Debt-to-Equity Ratio</h3>
-							<p class="math">$$Debt-to-Equity = \frac{Total\ Debt}{Total\ Equity}$$</p>
-							<p>Current ratio: <span class="math">$$\frac{89.3B}{45.2B} = 1.98$$</span></p>
-						</div>
-					</div>
-					<aside class="notes">
-						These are some of the standard financial formulas we use to assess the health of our business. Our ROE and EPS are strong, and our debt-to-equity is at a manageable level.
-					</aside>
-				</section>
-
-				<!-- Growth Strategy -->
 				<section>
-					<h2>Growth Strategy</h2>
-					<div class="r-stack">
-						<div class="fragment fade-in">
-							<h3>Digital Transformation</h3>
-							<ul>
-								<li>AI-powered customer insights</li>
-								<li>Blockchain for secure transactions</li>
-								<li>Mobile banking adoption: 78%</li>
-							</ul>
-						</div>
-						<div class="fragment fade-in">
-							<h3>Sustainable Finance</h3>
-							<ul>
-								<li>Green bond issuance: $5.2B</li>
-								<li>ESG investment products</li>
-								<li>Carbon-neutral operations by 2030</li>
-							</ul>
-						</div>
-						<div class="fragment fade-in">
-							<h3>Market Expansion</h3>
-							<ul>
-								<li>Asia-Pacific growth: +25%</li>
-								<li>Digital wealth management</li>
-								<li>Partnerships with fintech startups</li>
-							</ul>
-						</div>
-					</div>
+					<h2>Financial Formula</h2>
+					<p>We use the following formula to calculate Compound Annual Growth Rate (CAGR):</p>
+					<p>
+						\[ \text{CAGR} = \left( \frac{\text{Ending Value}}{\text{Beginning Value}} \right)^{\frac{1}{\text{Number of Years}}} - 1 \]
+					</p>
 					<aside class="notes">
-						Looking forward, our growth will be driven by three pillars: continued digital transformation, a focus on sustainable finance, and aggressive market expansion.
+						This is the standard formula we use for calculating CAGR, which gives us a clear picture of our long-term growth.
 					</aside>
 				</section>
 
-				<!-- Risk Management -->
-				<section data-background-color="#e74c3c">
-					<h2>Risk Management</h2>
-					<div class="fragment">
-						<h3>Key Risk Metrics</h3>
-						<ul>
-							<li>Credit risk: Within acceptable limits</li>
-							<li>Market risk: Hedged positions</li>
-							<li>Operational risk: Enhanced controls</li>
-							<li>Cybersecurity: Advanced threat detection</li>
-						</ul>
-					</div>
-					<div class="fragment">
-						<h3>Regulatory Compliance</h3>
-						<ul>
-							<li>Basel III compliance achieved</li>
-							<li>Anti-money laundering systems upgraded</li>
-							<li>Data privacy regulations met</li>
-						</ul>
-					</div>
-					<aside class="notes">
-						A strong risk management framework is crucial. We are well-positioned to handle market volatility and are fully compliant with all regulatory requirements.
-					</aside>
-				</section>
-
-				<!-- Future Outlook -->
 				<section>
-					<h2>Future Outlook</h2>
-					<div class="r-stack">
-						<div class="fragment">
-							<h3>2026 Projections</h3>
-							<ul>
-								<li>Revenue growth: 8-12%</li>
-								<li>Digital revenue: 40% of total</li>
-								<li>Cost optimization: $2B savings</li>
-							</ul>
-						</div>
-						<div class="fragment">
-							<h3>Strategic Initiatives</h3>
-							<ul>
-								<li>AI/ML implementation across products</li>
-								<li>Sustainable finance expansion</li>
-								<li>Global market penetration</li>
-							</ul>
-						</div>
-					</div>
-					<aside class="notes">
-						We are confident about the future. We project continued growth in 2026, driven by key strategic initiatives in technology and market expansion.
-					</aside>
+					<h2>Thank You</h2>
+					<p>Questions?</p>
+					<p>Contact: <a href="mailto:24f3004072@ds.study.iitm.ac.in">24f3004072@ds.study.iitm.ac.in</a></p>
 				</section>
-
-				<!-- Contact Information -->
-				<section data-background-color="#2c3e50">
-					<h2>Contact Information</h2>
-					<p><strong>Technical Consultant</strong></p>
-					<p>Email: <a href="mailto:24f3004072@ds.study.iitm.ac.in">24f3004072@ds.study.iitm.ac.in</a></p>
-					<p>Phone: +1 (555) 123-4567</p>
-					<p>Thank you for your attention</p>
-					<aside class="notes">
-						Thank you. I'm now happy to take any questions you might have.
-					</aside>
-				</section>
-
 			</div>
 		</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/zoom/zoom.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/search/search.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script src="plugin/math/math.js"></script>
-
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/notes/notes.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/markdown/markdown.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/highlight.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/math/math.min.js"></script>
 		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
-				slideNumber: true,
-
-				// Learn about plugins: https://github.com/hakimel/reveal.js#plugins
-				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMath ]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
 			});
 		</script>
 	</body>
